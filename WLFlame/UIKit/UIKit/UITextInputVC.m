@@ -59,6 +59,35 @@
     
     textView.inputDelegate = self;
     
+    //分词
+    NSLog(@"%@", textView.tokenizer);
+    
+    NSLog(@"%@", [textView.tokenizer rangeEnclosingPosition:textView.beginningOfDocument withGranularity:UITextGranularityWord inDirection:UITextLayoutDirectionLeft]);
+    
+    NSLog(@"%@", [textView positionWithinRange:[textView textRangeFromPosition:textView.beginningOfDocument toPosition:textView.endOfDocument] farthestInDirection:UITextLayoutDirectionLeft]);
+    
+    CGRect firstRect = [textView firstRectForRange:[textView textRangeFromPosition:textView.beginningOfDocument toPosition:textView.endOfDocument]];
+    // 文字frame
+    UIView *firstRectView = [[UIView alloc] initWithFrame:firstRect];
+    firstRectView.backgroundColor = [UIColor redColor];
+//    [textView addSubview:firstRectView];
+    //分割线
+    CGRect caretRect = [textView caretRectForPosition:[textView positionFromPosition:textView.beginningOfDocument offset:3]];
+    UIView *caretRectView = [[UIView alloc] initWithFrame:caretRect];
+    caretRectView.backgroundColor = [UIColor cyanColor];
+    [textView addSubview:caretRectView];
+    
+    NSLog(@"%@", [textView selectionRectsForRange:[textView textRangeFromPosition:textView.beginningOfDocument toPosition:textView.endOfDocument]]);;
+    
+    // Hit Testing
+    // 最靠近某个点的postion
+    NSLog(@"%@", [textView closestPositionToPoint:self.view.center]);
+    // 在某个范围内最靠近的点
+    NSLog(@"%@", [textView closestPositionToPoint:self.view.center withinRange:[textView textRangeFromPosition:textView.beginningOfDocument toPosition:[textView positionFromPosition:textView.beginningOfDocument offset:3]]]);
+    
+    NSLog(@"%@", [textView characterRangeAtPoint:self.view.center]);
+    
+    NSLog(@"%@", [textView textInputView]);
 }
 
 #pragma mark -- UITextInputDelegate
