@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6E7EF8A1CE3206A007E0973 /* NSCalendarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EF891CE3206A007E0973 /* NSCalendarVC.m */; };
+		F6E7EF8C1CE3261D007E0973 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EF8B1CE3261D007E0973 /* Foundation+Log.m */; };
 		F6FF1D361CE1BFC2005A97D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FF1D351CE1BFC2005A97D5 /* main.m */; };
 		F6FF1D391CE1BFC2005A97D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FF1D381CE1BFC2005A97D5 /* AppDelegate.m */; };
 		F6FF1D3C1CE1BFC2005A97D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FF1D3B1CE1BFC2005A97D5 /* ViewController.m */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6E7EF881CE3206A007E0973 /* NSCalendarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCalendarVC.h; sourceTree = "<group>"; };
+		F6E7EF891CE3206A007E0973 /* NSCalendarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSCalendarVC.m; sourceTree = "<group>"; };
+		F6E7EF8B1CE3261D007E0973 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		F6FF1D311CE1BFC2005A97D5 /* Foundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6FF1D351CE1BFC2005A97D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6FF1D371CE1BFC2005A97D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,9 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6E7EF871CE32053007E0973 /* NSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F6E7EF881CE3206A007E0973 /* NSCalendarVC.h */,
+				F6E7EF891CE3206A007E0973 /* NSCalendarVC.m */,
+			);
+			name = NSCalendar;
+			sourceTree = "<group>";
+		};
 		F6FF1D281CE1BFC2005A97D5 = {
 			isa = PBXGroup;
 			children = (
+				F6E7EF8B1CE3261D007E0973 /* Foundation+Log.m */,
 				F6FF1D331CE1BFC2005A97D5 /* Foundation */,
 				F6FF1D321CE1BFC2005A97D5 /* Products */,
 			);
@@ -61,6 +76,7 @@
 		F6FF1D331CE1BFC2005A97D5 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F6E7EF871CE32053007E0973 /* NSCalendar */,
 				F6FF1D4B1CE1C017005A97D5 /* NSAttributedString */,
 				F6FF1D371CE1BFC2005A97D5 /* AppDelegate.h */,
 				F6FF1D381CE1BFC2005A97D5 /* AppDelegate.m */,
@@ -166,6 +182,8 @@
 				F6FF1D391CE1BFC2005A97D5 /* AppDelegate.m in Sources */,
 				F6FF1D4E1CE1C039005A97D5 /* NSAttributedStringVC.m in Sources */,
 				F6FF1D361CE1BFC2005A97D5 /* main.m in Sources */,
+				F6E7EF8A1CE3206A007E0973 /* NSCalendarVC.m in Sources */,
+				F6E7EF8C1CE3261D007E0973 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +334,7 @@
 				F6FF1D4A1CE1BFC2005A97D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

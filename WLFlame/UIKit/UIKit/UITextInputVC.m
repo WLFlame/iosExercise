@@ -58,7 +58,7 @@
     NSLog(@"%ld", [textView offsetFromPosition:textView.beginningOfDocument toPosition:textView.endOfDocument]);
     
     textView.inputDelegate = self;
-    
+   
     //分词
     NSLog(@"%@", textView.tokenizer);
     

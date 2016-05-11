@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.array = @[
-                   @"NSAttributedStringVC"
+                   @"NSAttributedStringVC",
+                   @"NSCalendarVC"
                    ];
     
 }

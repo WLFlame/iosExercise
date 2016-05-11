@@ -23,7 +23,11 @@
                    @"NSLayoutAnchorVC",
                    @"UIUserNotificationSettingsVC",
                    @"UITextInputVC",
-                   @"UITextInputTraitsVC"
+                   @"UITextInputTraitsVC",
+                   @"UITableViewVC",
+                   @"UIScrollViewVC",
+                   @"UIViewVC",
+                   @"UIResponderVC"
                    ];
 
 }
