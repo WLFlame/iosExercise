@@ -110,6 +110,99 @@
     redView.alpha = 0.7;
     // 不透明
     redView.opaque = YES;
+    // 清空上下文对象在绘制之前
+//    clearsContextBeforeDrawing
+    // 蒙板view
+    UIView *green = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
+    green.backgroundColor = [UIColor greenColor];
+    redView.maskView = green;
+    
+    // tintColor 线条颜色
+    UISwitch *sw = [UISwitch new];
+    sw.center = self.view.center;
+    [self.view addSubview:sw];
+    sw.tintColor = [UIColor redColor];
+    sw.tintAdjustmentMode = UIViewTintAdjustmentModeDimmed;
+    // tintColor发生变化
+    // 返回当前的动画时间
+//    inheritedAnimationDuration
+    
+    // 添加到view的手势
+    NSLog(@"gestureRecognizers %@", self.view.gestureRecognizers);
+    // 添加手势
+//    addGestureRecognizer
+    // 移除手势
+//    removeGestureRecognizer
+    // 是否接受手势, 如果不接受则不做接下来的点击
+//    gestureRecognizerShouldBegin
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+    UIView *orange = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 400, 400)];
+    orange.backgroundColor = [UIColor orangeColor];
+    orange.center = self.view.center;
+    [self.view addSubview:orange];
+//    [UIView animateWithDuration:0.25 animations:^{
+//        orange.frame = CGRectMake(self.view.center.x, self.view.center.y, 100, 100);
+//    }];
+    
+//    [UIView animateWithDuration:0.25 animations:^{
+//          orange.frame = CGRectMake(self.view.center.x, self.view.center.y, 100, 100);
+//    } completion:^(BOOL finished) {
+//        [orange removeFromSuperview];
+//    }];
+    
+//    [UIView animateWithDuration:0.25 delay:0.25 options:UIViewAnimationOptionShowHideTransitionViews animations:^{
+//         orange.frame = CGRectMake(self.view.center.x, self.view.center.y, 100, 100);
+//    } completion:^(BOOL finished) {
+//        [orange removeFromSuperview];
+//    }];
+    
+//    Spring 动画
+//    [UIView animateWithDuration:0.25 delay:0.25 usingSpringWithDamping:0.5 initialSpringVelocity:0.5 options:UIViewAnimationOptionRepeat animations:^{
+//        orange.frame = CGRectMake(self.view.center.x, self.view.center.y, 100, 100);
+//    } completion:^(BOOL finished) {
+//         [orange removeFromSuperview];
+//    }];
+    
+//    [orange removeFromSuperview];
+//    orange.frame = self.view.bounds;
+//     [self.view addSubview:orange];
+//    UIView *black = [[UIView alloc] initWithFrame:self.view.bounds];
+//    black.backgroundColor = [UIColor blueColor];
+//    
+//    转场动画
+//    [UIView transitionFromView:orange toView:black duration:1 options:UIViewAnimationOptionTransitionFlipFromLeft completion:^(BOOL finished) {
+//        [orange removeFromSuperview];
+//        [self.view addSubview:black];
+//    }];
+    //系统动画
+//    [UIView performSystemAnimation:UISystemAnimationDelete onViews:@[orange] options:UIViewAnimationOptionCurveLinear animations:^{
+//        orange.frame = self.view.bounds;
+//    } completion:^(BOOL finished) {
+//        
+//    }];
+    // 关键帧动画
+//    [UIView animateKeyframesWithDuration:6 delay:1 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+//        [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:1/3 animations:^{
+//            orange.backgroundColor = [UIColor blueColor];
+//        }];
+//        [UIView addKeyframeWithRelativeStartTime:1/3 relativeDuration:1/3 animations:^{
+//            orange.backgroundColor = [UIColor redColor];
+//        }];
+//        [UIView addKeyframeWithRelativeStartTime:2/3 relativeDuration:1 animations:^{
+//           orange.backgroundColor = [UIColor cyanColor];
+//        }];
+//    } completion:^(BOOL finished) {
+//        orange.backgroundColor = [UIColor whiteColor];
+//    }];
+    // Motion
+//    UIInterpolatingMotionEffect * xEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+//    xEffect.minimumRelativeValue =  [NSNumber numberWithFloat:-40.0];
+//    xEffect.maximumRelativeValue = [NSNumber numberWithFloat:40.0];
+//    [orange addMotionEffect:xEffect];
 }
 
 
