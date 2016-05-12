@@ -104,6 +104,12 @@
     redView.preservesSuperviewLayoutMargins = YES;
     //layoutMargin发生变化
 //    layoutMarginsDidChange
+    // 限制subview不能超出父view的范围
+    redView.clipsToBounds = YES;
+    // 透明度
+    redView.alpha = 0.7;
+    // 不透明
+    redView.opaque = YES;
 }
 
 
