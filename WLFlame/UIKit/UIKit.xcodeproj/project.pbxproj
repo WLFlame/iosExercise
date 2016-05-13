@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */; };
 		D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D5701CE23DC20054D043 /* UITextInputTraitsVC.m */; };
+		F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68409081CE57C6E0027DC08 /* NSTextStorageVC.m */; };
+		F684090C1CE57CA10027DC08 /* BlodTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F684090B1CE57CA10027DC08 /* BlodTextStorage.m */; };
+		F68409101CE5A6CA0027DC08 /* NSLayoutManagerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F684090F1CE5A6CA0027DC08 /* NSLayoutManagerVC.m */; };
+		F68409141CE5AE530027DC08 /* NSTextContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68409131CE5AE530027DC08 /* NSTextContainerVC.m */; };
+		F68409171CE5AF4E0027DC08 /* BlodTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F68409161CE5AF4E0027DC08 /* BlodTextContainer.m */; };
+		F684091B1CE5B86F0027DC08 /* BoldLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F684091A1CE5B86F0027DC08 /* BoldLayoutManager.m */; };
+		F6B4B7BA1CE570E70096C574 /* UITextViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B4B7B91CE570E70096C574 /* UITextViewVC.m */; };
 		F6E7EF821CE3066F007E0973 /* UITableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EF811CE3066F007E0973 /* UITableViewVC.m */; };
 		F6E7EF861CE3077B007E0973 /* UIScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EF851CE3077B007E0973 /* UIScrollViewVC.m */; };
 		F6E7EF901CE3328E007E0973 /* UIViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EF8F1CE3328E007E0973 /* UIViewVC.m */; };
@@ -69,6 +76,20 @@
 		D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextInputVC.m; sourceTree = "<group>"; };
 		D2B9D56F1CE23DC20054D043 /* UITextInputTraitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextInputTraitsVC.h; sourceTree = "<group>"; };
 		D2B9D5701CE23DC20054D043 /* UITextInputTraitsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextInputTraitsVC.m; sourceTree = "<group>"; };
+		F68409071CE57C6E0027DC08 /* NSTextStorageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextStorageVC.h; sourceTree = "<group>"; };
+		F68409081CE57C6E0027DC08 /* NSTextStorageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextStorageVC.m; sourceTree = "<group>"; };
+		F684090A1CE57CA10027DC08 /* BlodTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlodTextStorage.h; sourceTree = "<group>"; };
+		F684090B1CE57CA10027DC08 /* BlodTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlodTextStorage.m; sourceTree = "<group>"; };
+		F684090E1CE5A6CA0027DC08 /* NSLayoutManagerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSLayoutManagerVC.h; sourceTree = "<group>"; };
+		F684090F1CE5A6CA0027DC08 /* NSLayoutManagerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSLayoutManagerVC.m; sourceTree = "<group>"; };
+		F68409121CE5AE530027DC08 /* NSTextContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTextContainerVC.h; sourceTree = "<group>"; };
+		F68409131CE5AE530027DC08 /* NSTextContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTextContainerVC.m; sourceTree = "<group>"; };
+		F68409151CE5AF4E0027DC08 /* BlodTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlodTextContainer.h; sourceTree = "<group>"; };
+		F68409161CE5AF4E0027DC08 /* BlodTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlodTextContainer.m; sourceTree = "<group>"; };
+		F68409191CE5B86F0027DC08 /* BoldLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoldLayoutManager.h; sourceTree = "<group>"; };
+		F684091A1CE5B86F0027DC08 /* BoldLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoldLayoutManager.m; sourceTree = "<group>"; };
+		F6B4B7B81CE570E70096C574 /* UITextViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextViewVC.h; sourceTree = "<group>"; };
+		F6B4B7B91CE570E70096C574 /* UITextViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextViewVC.m; sourceTree = "<group>"; };
 		F6E7EF801CE3066F007E0973 /* UITableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewVC.h; sourceTree = "<group>"; };
 		F6E7EF811CE3066F007E0973 /* UITableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITableViewVC.m; sourceTree = "<group>"; };
 		F6E7EF841CE3077B007E0973 /* UIScrollViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIScrollViewVC.h; sourceTree = "<group>"; };
@@ -155,6 +176,48 @@
 			name = UITextInputTraits;
 			sourceTree = "<group>";
 		};
+		F68409061CE57BEE0027DC08 /* NSTextStorageVC */ = {
+			isa = PBXGroup;
+			children = (
+				F68409071CE57C6E0027DC08 /* NSTextStorageVC.h */,
+				F68409081CE57C6E0027DC08 /* NSTextStorageVC.m */,
+				F684090A1CE57CA10027DC08 /* BlodTextStorage.h */,
+				F684090B1CE57CA10027DC08 /* BlodTextStorage.m */,
+			);
+			name = NSTextStorageVC;
+			sourceTree = "<group>";
+		};
+		F684090D1CE5A6B00027DC08 /* NSLayoutManagerVC */ = {
+			isa = PBXGroup;
+			children = (
+				F684090E1CE5A6CA0027DC08 /* NSLayoutManagerVC.h */,
+				F684090F1CE5A6CA0027DC08 /* NSLayoutManagerVC.m */,
+				F68409191CE5B86F0027DC08 /* BoldLayoutManager.h */,
+				F684091A1CE5B86F0027DC08 /* BoldLayoutManager.m */,
+			);
+			name = NSLayoutManagerVC;
+			sourceTree = "<group>";
+		};
+		F68409111CE5AE420027DC08 /* NSTextContainerVC */ = {
+			isa = PBXGroup;
+			children = (
+				F68409121CE5AE530027DC08 /* NSTextContainerVC.h */,
+				F68409131CE5AE530027DC08 /* NSTextContainerVC.m */,
+				F68409151CE5AF4E0027DC08 /* BlodTextContainer.h */,
+				F68409161CE5AF4E0027DC08 /* BlodTextContainer.m */,
+			);
+			name = NSTextContainerVC;
+			sourceTree = "<group>";
+		};
+		F6B4B7B71CE570D60096C574 /* UITextViewVC */ = {
+			isa = PBXGroup;
+			children = (
+				F6B4B7B81CE570E70096C574 /* UITextViewVC.h */,
+				F6B4B7B91CE570E70096C574 /* UITextViewVC.m */,
+			);
+			name = UITextViewVC;
+			sourceTree = "<group>";
+		};
 		F6E7EF7F1CE30658007E0973 /* UITableViewVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +277,10 @@
 		F6FF1CF31CE17D82005A97D5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F68409111CE5AE420027DC08 /* NSTextContainerVC */,
+				F684090D1CE5A6B00027DC08 /* NSLayoutManagerVC */,
+				F68409061CE57BEE0027DC08 /* NSTextStorageVC */,
+				F6B4B7B71CE570D60096C574 /* UITextViewVC */,
 				F6E7EF911CE34732007E0973 /* UIResponderVC */,
 				F6E7EF8D1CE3327D007E0973 /* UIViewVC */,
 				F6E7EF831CE30760007E0973 /* UIScrollViewVC */,
@@ -462,9 +529,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B4B7BA1CE570E70096C574 /* UITextViewVC.m in Sources */,
 				F6FF1D521CE1CCA7005A97D5 /* NSDataAssetVC.m in Sources */,
 				F6E7EF861CE3077B007E0973 /* UIScrollViewVC.m in Sources */,
 				F6FF1D891CE1F3E4005A97D5 /* UIViewController+Config.m in Sources */,
+				F684091B1CE5B86F0027DC08 /* BoldLayoutManager.m in Sources */,
+				F68409171CE5AF4E0027DC08 /* BlodTextContainer.m in Sources */,
 				F6FF1CFC1CE17D82005A97D5 /* ViewController.m in Sources */,
 				F6E7EF941CE34740007E0973 /* UIResponderVC.m in Sources */,
 				F6FF1D0E1CE17DF6005A97D5 /* NSAttributeStringVC.m in Sources */,
@@ -473,10 +543,14 @@
 				F6FF1D821CE1D599005A97D5 /* NSLayoutConstraintVC.m in Sources */,
 				F6FF1D7E1CE1CF7B005A97D5 /* NSLayoutAnchorVC.m in Sources */,
 				F6FF1CF61CE17D82005A97D5 /* main.m in Sources */,
+				F68409141CE5AE530027DC08 /* NSTextContainerVC.m in Sources */,
+				F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */,
 				D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */,
 				F6E7EF901CE3328E007E0973 /* UIViewVC.m in Sources */,
 				D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */,
 				F6FF1D861CE1F037005A97D5 /* UIUserNotificationSettingsVC.m in Sources */,
+				F68409101CE5A6CA0027DC08 /* NSLayoutManagerVC.m in Sources */,
+				F684090C1CE57CA10027DC08 /* BlodTextStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

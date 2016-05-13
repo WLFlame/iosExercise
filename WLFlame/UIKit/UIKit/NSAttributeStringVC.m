@@ -40,7 +40,7 @@
     
     NSTextAttachment *attachment = [[NSTextAttachment alloc] init];
     attachment.image = [UIImage imageNamed:@"text"];
-    attachment.bounds = CGRectMake(0, 0, 20, 20);
+    attachment.bounds = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.width);
     
     NSDictionary *attrs                     = @{
                             // 字体样式
@@ -84,9 +84,10 @@
     NSMutableAttributedString *attributeStr = [[NSMutableAttributedString alloc] initWithString:@"据新华社兰州5月9日电 5月9日上午，在黄河兰州段地面以下40米深处，中国铁建十四局集团“金城四号”盾构机从黄河北岸中间风井缓缓破洞而出，我国首条“穿黄”地铁——兰州地铁隧道1号线右线顺利贯通。兰州轨道交通成功穿越黄河河床、大堤等重大风险源，为年底全线洞通奠定了基础。\n据新华社兰州5月9日电 5月9日上午，在黄河兰州段地面以下40米深处，中国铁建十四局集团“金城四号”盾构机从黄河北岸中间风井缓缓破洞而出，我国首条“穿黄”地铁——兰州地铁隧道1号线右线顺利贯通。兰州轨道交通成功穿越黄河河床、大堤等重大风险源，为年底全线洞通奠定了基础。" attributes:attrs];
     
 
-    
+    [attributeStr appendAttributedString:[NSAttributedString attributedStringWithAttachment:attachment]];
     
     UITextView *textView                    = [[UITextView alloc] init];
+    textView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
     textView.attributedText                 = attributeStr;
     textView.frame                          = self.view.bounds;
     [self.view addSubview:textView];

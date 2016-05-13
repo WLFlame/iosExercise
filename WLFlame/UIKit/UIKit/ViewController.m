@@ -27,7 +27,11 @@
                    @"UITableViewVC",
                    @"UIScrollViewVC",
                    @"UIViewVC",
-                   @"UIResponderVC"
+                   @"UIResponderVC",
+                   @"UITextViewVC",
+                   @"NSTextStorageVC",
+                   @"NSLayoutManagerVC",
+                   @"NSTextContainerVC"
                    ];
 
 }
