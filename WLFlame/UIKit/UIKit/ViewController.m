@@ -31,7 +31,10 @@
                    @"UITextViewVC",
                    @"NSTextStorageVC",
                    @"NSLayoutManagerVC",
-                   @"NSTextContainerVC"
+                   @"NSTextContainerVC",
+                   @"UIControlVC",
+                   @"UIEventVC",
+                   @"UITouchVC"
                    ];
 
 }

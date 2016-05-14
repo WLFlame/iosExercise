@@ -7,6 +7,7 @@
 //
 
 #import "UIViewVC.h"
+#import "AlignmentView.h"
 
 @interface UIViewVC ()
 
@@ -115,7 +116,7 @@
     // 蒙板view
     UIView *green = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 35, 35)];
     green.backgroundColor = [UIColor greenColor];
-    redView.maskView = green;
+//    redView.maskView = green;
     
     // tintColor 线条颜色
     UISwitch *sw = [UISwitch new];
@@ -135,6 +136,55 @@
 //    removeGestureRecognizer
     // 是否接受手势, 如果不接受则不做接下来的点击
 //    gestureRecognizerShouldBegin
+    // 操作约束
+    
+//    public var constraints: [NSLayoutConstraint] { get }
+//    
+//    
+//    public func addConstraint(constraint: NSLayoutConstraint) // This method will be deprecated in a future release and should be avoided.  Instead, set NSLayoutConstraint's active property to YES.
+//    
+//    public func addConstraints(constraints: [NSLayoutConstraint]) // This method will be deprecated in a future release and should be avoided.  Instead use +[NSLayoutConstraint activateConstraints:].
+//    
+//    public func removeConstraint(constraint: NSLayoutConstraint) // This method will be deprecated in a future release and should be avoided.  Instead set NSLayoutConstraint's active property to NO.
+//    
+//    public func removeConstraints(constraints: [NSLayoutConstraint])
+    // 当一个自定义view的某个属性发生改变， 并且可能影响到constraint时需要调用此方法去标记constraint需要在未来的某个点更新, 系统然后调用updateConstraints
+//    [redView setNeedsUpdateConstraints];
+    // constraint-based layout system 使用此返回值去决定是否需要调用updateConstraints作为正常布局过程的一部分
+//    [redView needsUpdateConstraints];
+    // 自定义view应该重写此方法在其中建立constraints ，注意: 要在实现的最后调用[super updateConstraints]
+//    [redView updateConstraints];
+    // 立即触发约束更新， 自动更新布局
+//    [redView updateConstraintsIfNeeded];
+    // 禁用autoresing
+//    redView.translatesAutoresizingMaskIntoConstraints = NO;
+//    意思就是基于约束的布局是懒触发的，只有在添加了约束的情况下，系统才会自动调用 -updateConstraints 方法，如果把所有的约束放在 updateConstraints中，那么系统将会不知道你的布局方式是基于约束的，所以 重写+requiresConstraintBasedLayout 返回YES就是明确告诉系统：虽然我之前没有添加约束,但我确实是基于约束的布局！这样可以保证系统一定会调用 -updateConstraints 方法 从而正确添加约束.
+    
+//    requiresConstraintBasedLayout
+    
+    AlignmentView *alignmentView = [[AlignmentView alloc] init];
+    alignmentView.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:alignmentView];
+    alignmentView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addConstraint:[alignmentView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor]];
+    [self.view addConstraint:[alignmentView.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:100]];
+//    [alignmentView addConstraint:[alignmentView.heightAnchor constraintEqualToConstant:20]] ;
+//    [alignmentView addConstraint:[alignmentView.widthAnchor constraintEqualToConstant:20]] ;
+    // 返回满足约束条件的大小
+    CGSize size = [alignmentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//    CGSize size = [alignmentView systemLayoutSizeFittingSize:<#(CGSize)#> withHorizontalFittingPriority:<#(UILayoutPriority)#> verticalFittingPriority:<#(UILayoutPriority)#>]
+    // 返回某个方向的约束
+    NSLog(@"%@", [alignmentView constraintsAffectingLayoutForAxis:UILayoutConstraintAxisHorizontal]);
+    // 是否有冲突越苏
+    NSLog(@"%d", [alignmentView hasAmbiguousLayout]);
+    [alignmentView exerciseAmbiguityInLayout];
+    // 生成位图拷贝
+    UIView *snap = [alignmentView snapshotViewAfterScreenUpdates:YES];
+    [self.view addSubview: snap];
+    // 截取部分视图显示
+//    [self.view resizableSnapshotViewFromRect:<#(CGRect)#> afterScreenUpdates:<#(BOOL)#> withCapInsets:<#(UIEdgeInsets)#>]
+    // 将上下文写入当前上下文对象
+//    drawViewHierarchyInRect
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

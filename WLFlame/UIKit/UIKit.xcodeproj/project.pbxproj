@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D28A14891CE63C7F002550DC /* AlignmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14881CE63C7F002550DC /* AlignmentView.m */; };
+		D28A148D1CE6DA3B002550DC /* UIControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A148C1CE6DA3B002550DC /* UIControlVC.m */; };
+		D28A14911CE6DD86002550DC /* UIEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14901CE6DD86002550DC /* UIEventVC.m */; };
+		D28A14951CE6DF81002550DC /* UITouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14941CE6DF81002550DC /* UITouchVC.m */; };
 		D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */; };
 		D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D5701CE23DC20054D043 /* UITextInputTraitsVC.m */; };
 		F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68409081CE57C6E0027DC08 /* NSTextStorageVC.m */; };
@@ -72,6 +76,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D28A14871CE63C7F002550DC /* AlignmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignmentView.h; sourceTree = "<group>"; };
+		D28A14881CE63C7F002550DC /* AlignmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlignmentView.m; sourceTree = "<group>"; };
+		D28A148B1CE6DA3B002550DC /* UIControlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlVC.h; sourceTree = "<group>"; };
+		D28A148C1CE6DA3B002550DC /* UIControlVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIControlVC.m; sourceTree = "<group>"; };
+		D28A148F1CE6DD86002550DC /* UIEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIEventVC.h; sourceTree = "<group>"; };
+		D28A14901CE6DD86002550DC /* UIEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIEventVC.m; sourceTree = "<group>"; };
+		D28A14931CE6DF81002550DC /* UITouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchVC.h; sourceTree = "<group>"; };
+		D28A14941CE6DF81002550DC /* UITouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchVC.m; sourceTree = "<group>"; };
 		D2B9D56B1CE23CB30054D043 /* UITextInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextInputVC.h; sourceTree = "<group>"; };
 		D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextInputVC.m; sourceTree = "<group>"; };
 		D2B9D56F1CE23DC20054D043 /* UITextInputTraitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextInputTraitsVC.h; sourceTree = "<group>"; };
@@ -158,6 +170,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D28A148A1CE6DA28002550DC /* UIControlVC */ = {
+			isa = PBXGroup;
+			children = (
+				D28A148B1CE6DA3B002550DC /* UIControlVC.h */,
+				D28A148C1CE6DA3B002550DC /* UIControlVC.m */,
+			);
+			name = UIControlVC;
+			sourceTree = "<group>";
+		};
+		D28A148E1CE6DD78002550DC /* UIEventVC */ = {
+			isa = PBXGroup;
+			children = (
+				D28A148F1CE6DD86002550DC /* UIEventVC.h */,
+				D28A14901CE6DD86002550DC /* UIEventVC.m */,
+			);
+			name = UIEventVC;
+			sourceTree = "<group>";
+		};
+		D28A14921CE6DF75002550DC /* UITouchVC */ = {
+			isa = PBXGroup;
+			children = (
+				D28A14931CE6DF81002550DC /* UITouchVC.h */,
+				D28A14941CE6DF81002550DC /* UITouchVC.m */,
+			);
+			name = UITouchVC;
+			sourceTree = "<group>";
+		};
 		D2B9D56A1CE23C930054D043 /* UITextInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +280,8 @@
 			children = (
 				F6E7EF8E1CE3328E007E0973 /* UIViewVC.h */,
 				F6E7EF8F1CE3328E007E0973 /* UIViewVC.m */,
+				D28A14871CE63C7F002550DC /* AlignmentView.h */,
+				D28A14881CE63C7F002550DC /* AlignmentView.m */,
 			);
 			name = UIViewVC;
 			sourceTree = "<group>";
@@ -277,6 +318,9 @@
 		F6FF1CF31CE17D82005A97D5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D28A14921CE6DF75002550DC /* UITouchVC */,
+				D28A148E1CE6DD78002550DC /* UIEventVC */,
+				D28A148A1CE6DA28002550DC /* UIControlVC */,
 				F68409111CE5AE420027DC08 /* NSTextContainerVC */,
 				F684090D1CE5A6B00027DC08 /* NSLayoutManagerVC */,
 				F68409061CE57BEE0027DC08 /* NSTextStorageVC */,
@@ -544,10 +588,14 @@
 				F6FF1D7E1CE1CF7B005A97D5 /* NSLayoutAnchorVC.m in Sources */,
 				F6FF1CF61CE17D82005A97D5 /* main.m in Sources */,
 				F68409141CE5AE530027DC08 /* NSTextContainerVC.m in Sources */,
+				D28A14891CE63C7F002550DC /* AlignmentView.m in Sources */,
+				D28A148D1CE6DA3B002550DC /* UIControlVC.m in Sources */,
 				F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */,
 				D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */,
 				F6E7EF901CE3328E007E0973 /* UIViewVC.m in Sources */,
+				D28A14951CE6DF81002550DC /* UITouchVC.m in Sources */,
 				D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */,
+				D28A14911CE6DD86002550DC /* UIEventVC.m in Sources */,
 				F6FF1D861CE1F037005A97D5 /* UIUserNotificationSettingsVC.m in Sources */,
 				F68409101CE5A6CA0027DC08 /* NSLayoutManagerVC.m in Sources */,
 				F684090C1CE57CA10027DC08 /* BlodTextStorage.m in Sources */,
