@@ -34,7 +34,10 @@
                    @"NSTextContainerVC",
                    @"UIControlVC",
                    @"UIEventVC",
-                   @"UITouchVC"
+                   @"UITouchVC",
+                   @"UITableViewControllerVC",
+                   @"UIWebViewVC",
+                   @"UIViewControllerVC"
                    ];
 
 }
