@@ -34,7 +34,11 @@
                    @"NSTextContainerVC",
                    @"UIControlVC",
                    @"UIEventVC",
-                   @"UITouchVC"
+                   @"UITouchVC",
+                   @"UITextFieldVC",
+                   @"UIGestureRecognizerVC",
+                   @"UITapGestureRecognizerVC",
+                   @"UIWindowVC"
                    ];
 
 }

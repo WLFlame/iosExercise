@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D21DDA461CE8BAA900556E1D /* UIGestureRecognizerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D21DDA451CE8BAA900556E1D /* UIGestureRecognizerVC.m */; };
+		D21DDA4A1CE8C5CC00556E1D /* UITapGestureRecognizerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D21DDA491CE8C5CC00556E1D /* UITapGestureRecognizerVC.m */; };
+		D21DDA4E1CE8C70000556E1D /* UIWindowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D21DDA4D1CE8C70000556E1D /* UIWindowVC.m */; };
 		D28A14891CE63C7F002550DC /* AlignmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14881CE63C7F002550DC /* AlignmentView.m */; };
 		D28A148D1CE6DA3B002550DC /* UIControlVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A148C1CE6DA3B002550DC /* UIControlVC.m */; };
 		D28A14911CE6DD86002550DC /* UIEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14901CE6DD86002550DC /* UIEventVC.m */; };
 		D28A14951CE6DF81002550DC /* UITouchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A14941CE6DF81002550DC /* UITouchVC.m */; };
+		D2B8EA901CE78C0B00F905B9 /* UITextFieldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B8EA8F1CE78C0B00F905B9 /* UITextFieldVC.m */; };
 		D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */; };
 		D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B9D5701CE23DC20054D043 /* UITextInputTraitsVC.m */; };
 		F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F68409081CE57C6E0027DC08 /* NSTextStorageVC.m */; };
@@ -76,6 +80,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D21DDA441CE8BAA900556E1D /* UIGestureRecognizerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGestureRecognizerVC.h; sourceTree = "<group>"; };
+		D21DDA451CE8BAA900556E1D /* UIGestureRecognizerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGestureRecognizerVC.m; sourceTree = "<group>"; };
+		D21DDA481CE8C5CC00556E1D /* UITapGestureRecognizerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITapGestureRecognizerVC.h; sourceTree = "<group>"; };
+		D21DDA491CE8C5CC00556E1D /* UITapGestureRecognizerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITapGestureRecognizerVC.m; sourceTree = "<group>"; };
+		D21DDA4C1CE8C70000556E1D /* UIWindowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWindowVC.h; sourceTree = "<group>"; };
+		D21DDA4D1CE8C70000556E1D /* UIWindowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWindowVC.m; sourceTree = "<group>"; };
 		D28A14871CE63C7F002550DC /* AlignmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignmentView.h; sourceTree = "<group>"; };
 		D28A14881CE63C7F002550DC /* AlignmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlignmentView.m; sourceTree = "<group>"; };
 		D28A148B1CE6DA3B002550DC /* UIControlVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIControlVC.h; sourceTree = "<group>"; };
@@ -84,6 +94,8 @@
 		D28A14901CE6DD86002550DC /* UIEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIEventVC.m; sourceTree = "<group>"; };
 		D28A14931CE6DF81002550DC /* UITouchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITouchVC.h; sourceTree = "<group>"; };
 		D28A14941CE6DF81002550DC /* UITouchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITouchVC.m; sourceTree = "<group>"; };
+		D2B8EA8E1CE78C0B00F905B9 /* UITextFieldVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextFieldVC.h; sourceTree = "<group>"; };
+		D2B8EA8F1CE78C0B00F905B9 /* UITextFieldVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextFieldVC.m; sourceTree = "<group>"; };
 		D2B9D56B1CE23CB30054D043 /* UITextInputVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextInputVC.h; sourceTree = "<group>"; };
 		D2B9D56C1CE23CB30054D043 /* UITextInputVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITextInputVC.m; sourceTree = "<group>"; };
 		D2B9D56F1CE23DC20054D043 /* UITextInputTraitsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITextInputTraitsVC.h; sourceTree = "<group>"; };
@@ -170,6 +182,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D21DDA431CE8B91300556E1D /* UIGestureRecognizerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D21DDA441CE8BAA900556E1D /* UIGestureRecognizerVC.h */,
+				D21DDA451CE8BAA900556E1D /* UIGestureRecognizerVC.m */,
+			);
+			name = UIGestureRecognizerVC;
+			sourceTree = "<group>";
+		};
+		D21DDA471CE8C5AA00556E1D /* UITapGestureRecognizerVC */ = {
+			isa = PBXGroup;
+			children = (
+				D21DDA481CE8C5CC00556E1D /* UITapGestureRecognizerVC.h */,
+				D21DDA491CE8C5CC00556E1D /* UITapGestureRecognizerVC.m */,
+			);
+			name = UITapGestureRecognizerVC;
+			sourceTree = "<group>";
+		};
+		D21DDA4B1CE8C6EF00556E1D /* UIWindowVC */ = {
+			isa = PBXGroup;
+			children = (
+				D21DDA4C1CE8C70000556E1D /* UIWindowVC.h */,
+				D21DDA4D1CE8C70000556E1D /* UIWindowVC.m */,
+			);
+			name = UIWindowVC;
+			sourceTree = "<group>";
+		};
 		D28A148A1CE6DA28002550DC /* UIControlVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +234,15 @@
 				D28A14941CE6DF81002550DC /* UITouchVC.m */,
 			);
 			name = UITouchVC;
+			sourceTree = "<group>";
+		};
+		D2B8EA8D1CE78BFA00F905B9 /* UITextFieldVC */ = {
+			isa = PBXGroup;
+			children = (
+				D2B8EA8E1CE78C0B00F905B9 /* UITextFieldVC.h */,
+				D2B8EA8F1CE78C0B00F905B9 /* UITextFieldVC.m */,
+			);
+			name = UITextFieldVC;
 			sourceTree = "<group>";
 		};
 		D2B9D56A1CE23C930054D043 /* UITextInput */ = {
@@ -318,6 +366,10 @@
 		F6FF1CF31CE17D82005A97D5 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				D21DDA4B1CE8C6EF00556E1D /* UIWindowVC */,
+				D21DDA471CE8C5AA00556E1D /* UITapGestureRecognizerVC */,
+				D21DDA431CE8B91300556E1D /* UIGestureRecognizerVC */,
+				D2B8EA8D1CE78BFA00F905B9 /* UITextFieldVC */,
 				D28A14921CE6DF75002550DC /* UITouchVC */,
 				D28A148E1CE6DD78002550DC /* UIEventVC */,
 				D28A148A1CE6DA28002550DC /* UIControlVC */,
@@ -582,8 +634,10 @@
 				F6FF1CFC1CE17D82005A97D5 /* ViewController.m in Sources */,
 				F6E7EF941CE34740007E0973 /* UIResponderVC.m in Sources */,
 				F6FF1D0E1CE17DF6005A97D5 /* NSAttributeStringVC.m in Sources */,
+				D21DDA4A1CE8C5CC00556E1D /* UITapGestureRecognizerVC.m in Sources */,
 				F6E7EF821CE3066F007E0973 /* UITableViewVC.m in Sources */,
 				F6FF1CF91CE17D82005A97D5 /* AppDelegate.m in Sources */,
+				D21DDA4E1CE8C70000556E1D /* UIWindowVC.m in Sources */,
 				F6FF1D821CE1D599005A97D5 /* NSLayoutConstraintVC.m in Sources */,
 				F6FF1D7E1CE1CF7B005A97D5 /* NSLayoutAnchorVC.m in Sources */,
 				F6FF1CF61CE17D82005A97D5 /* main.m in Sources */,
@@ -593,6 +647,8 @@
 				F68409091CE57C6E0027DC08 /* NSTextStorageVC.m in Sources */,
 				D2B9D56D1CE23CB30054D043 /* UITextInputVC.m in Sources */,
 				F6E7EF901CE3328E007E0973 /* UIViewVC.m in Sources */,
+				D21DDA461CE8BAA900556E1D /* UIGestureRecognizerVC.m in Sources */,
+				D2B8EA901CE78C0B00F905B9 /* UITextFieldVC.m in Sources */,
 				D28A14951CE6DF81002550DC /* UITouchVC.m in Sources */,
 				D2B9D5711CE23DC20054D043 /* UITextInputTraitsVC.m in Sources */,
 				D28A14911CE6DD86002550DC /* UIEventVC.m in Sources */,
