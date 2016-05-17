@@ -39,6 +39,9 @@
                    @"UIGestureRecognizerVC",
                    @"UITapGestureRecognizerVC",
                    @"UIWindowVC"
+                   @"UITableViewControllerVC",
+                   @"UIWebViewVC",
+                   @"UIViewControllerVC"
                    ];
 
 }
